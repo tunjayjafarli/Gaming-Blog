@@ -20,11 +20,13 @@ from rest_framework import routers
 
 from api.posts.views import PostViewSet
 from api.comments.views import CommentViewSet
+from api.users.views import UserViewSet
 
 # Register the API views with a router class
 router = routers.DefaultRouter()
 router.register('posts', PostViewSet)
 router.register('comments', CommentViewSet)
+router.register('users', UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
