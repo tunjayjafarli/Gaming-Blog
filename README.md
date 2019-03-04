@@ -33,9 +33,11 @@ docker exec -it gamingblog_web_1 python manage.py migrate
 
 The app should be up and running now. Browse to: `localhost:8000/api/` to view the API endpoints.
 
-Posts API is at: `localhost:8000/api/posts/`
+Posts API: `localhost:8000/api/posts/`
 
-Comments API is at: `localhost:8000/api/comments/`
+Comments API: `localhost:8000/api/comments/`
+
+Users API: `localhost:8000/api/users/`
 
 
 ## Running the tests
