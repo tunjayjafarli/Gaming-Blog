@@ -33,11 +33,22 @@ docker exec -it gamingblog_web_1 python manage.py migrate
 
 The app should be up and running now. Browse to: `localhost:8000/api/` to view the API endpoints.
 
+### API 
+
 Posts API: `localhost:8000/api/posts/` - create, update, retrieve, and delete posts
 
 Comments API: `localhost:8000/api/comments/` - create, update, retrieve, and delete comments
 
 Users API: `localhost:8000/api/users/` - create, update, retrieve, and delete users
+
+### Django admin
+
+Django admin is also available at `localhost:8000/admin/` but you will need a staff account (i.e. superuser) to view it.
+To create a superuser:
+```
+docker exec -it gamingblog_web_1 python manage.py createsuperuser
+```
+and follow the prompts to enter an email and password.
 
 
 ## Running the tests
